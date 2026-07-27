@@ -10,6 +10,10 @@ public class Program
 
         builder.Services.AddSingleton<SaleService>();
 
+        builder.Services.AddHttpClient();
+
+        builder.Services.AddHostedService<SyncWorker>();
+
         builder.Services.AddControllers();
 
         builder.Services.AddEndpointsApiExplorer();
