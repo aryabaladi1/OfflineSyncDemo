@@ -21,7 +21,7 @@ public class SyncWorker : BackgroundService
 
             if (pendingSales.Any())
             {
-                Console.WriteLine("Sending sales to central server...");
+                Console.WriteLine("Sending sale updates to central server...");
 
                 try
                 {
